@@ -28,3 +28,23 @@ Predictive insights enable public health officials to:
 2. Design more effective, data-driven vaccination campaigns.
 3. Allocate resources efficiently to increase overall vaccine coverage.
 
+## Models Used
+1. Baseline: Logistic Regression
+Simple, interpretable, and provides insight into important predictors.
+Achieved ROC-AUC of 0.839 (H1N1) and 0.854 (Seasonal flu).
+
+2. Random Forest
+Captures complex interactions and is robust to missing/noisy data.
+Slightly lower ROC-AUC (~0.827) but provides feature importance insights.
+
+3. Final Model: Multi-Output Logistic Regression
+Predicts both H1N1 and seasonal vaccine probabilities simultaneously.
+Higher ROC-AUC compared to Random Forest.
+Produces probability estimates to prioritize outreach effectively.
+
+## Key Predictors
+
+1. Doctor recommendation – Strongest influence on vaccination.
+2. Perceived vaccine safety and effectiveness – Beliefs directly affect uptake.
+3. Health worker status – Healthcare workers vaccinate at higher rates.
+4. Household characteristics – Number of adults and children influences likelihood.
